@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BabyMonitorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_weight="0.40"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivLeft"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/tempreture"/>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/ivLeft"
+                    android:textColor="@color/grey"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TEMPERATURE"/>
+
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:rotation="-90"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_logout"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/frame"
+                    android:layout_centerVertical="true"
+                    android:layout_width="80dp"
+                    android:layout_height="70dp">
+
+                    <RelativeLayout
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvNumber"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="32dp"
+                            android:text="28"
+                            android:textColor="@color/black"/>
+
+
+                        <TextView
+                            android:id="@+id/tvDegree"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 0"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:layout_toRightOf="@+id/tvNumber"/>
+
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+                            android:textSize="18dp"
+                            android:textColor="@color/black"
+                            android:layout_toRightOf="@+id/tvDegree"/>
+
+
+
+
+                    </RelativeLayout>
+
+
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"/>
+
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginRight="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_toggleupdown"/>
+
+
+                    <ImageView
+                        android:rotation="180"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_toggleupdown"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_top1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/cd_icon" />
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MUSIC"
+                        android:textSize="18dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mid1"
+                    android:layout_below="@+id/ll_top1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="White Noise For Ba.."
+                        android:textSize="17dp"
+                        android:singleLine="true"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/ll_mid1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:background="@drawable/circle_background"
+                        android:layout_height="40dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/ic_pause_button"
+                            android:layout_centerInParent="true"/>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="40dp"
+                        android:background="@drawable/circle_background"
+                        android:layout_height="40dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/ic_play_arrow"
+                            android:layout_centerInParent="true"/>
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_idea" />
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LIGHTS"
+                        android:textSize="17dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mid"
+                    android:layout_below="@+id/ll_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Philips Bulb Main"
+                        android:textSize="16dp"
+                        android:singleLine="true"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/ll_mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <SeekBar
+                        android:id="@+id/seekBar_luminosite"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:minHeight="5dp"
+                        android:minWidth="5dp"
+                        android:maxHeight="5dp"
+                        android:splitTrack="false"
+                        android:maxWidth="5dp"
+                        android:progress="30"
+                        android:progressDrawable="@drawable/custom_seekbar"
+                        android:thumb="@drawable/custom_horizontal_seekbar_thumb" />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_weight="1.60"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:background="@drawable/kid"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <com.pcube.cocotab.Helper.AspectRatioImageView
+                    android:tint="@color/white"
+                    android:scaleType="fitXY"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_frame"
+                    android:layout_marginRight="40dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginRight="40dp">
+
+                    <RelativeLayout
+                        android:backgroundTint="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="40dp"
+                        android:background="@drawable/circle_background"
+                        android:layout_height="40dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:tint="@color/black"
+                            android:src="@drawable/ic_plus"
+                            android:layout_centerInParent="true"/>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:backgroundTint="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="40dp"
+                        android:background="@drawable/circle_background"
+                        android:layout_height="40dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:tint="@color/black"
+                            android:src="@drawable/ic_substract"
+                            android:layout_centerInParent="true"/>
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</layout>

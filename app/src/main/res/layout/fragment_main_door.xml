@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_door"
+    tools:context=".Fragments.MainDoorFragment">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Door Bell Ringing"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@drawable/ripple_bg"
+                android:layout_width="130dp"
+                android:layout_height="130dp">
+
+
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ripple_bg">
+
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/circle_call_connect_bg"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_outline_call_7"
+                            android:tint="@color/white" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/circle_call_disconnect">
+
+                <ImageView
+                    android:rotation="135"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_outline_call_7"/>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/custom_button"
+            android:layout_alignParentRight="true">
+
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:tint="@color/white"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_locked"/>
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingRight="30dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:padding="20dp"
+                android:text="Unlock Door"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_locked"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+</layout>

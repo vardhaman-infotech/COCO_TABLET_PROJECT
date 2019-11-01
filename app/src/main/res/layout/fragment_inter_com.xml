@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.InterComFragment">
+
+
+   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                  <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="My Society"
+                                    android:textSize="16dp"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginRight="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_alignParentRight="true">
+
+                                <ImageView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_search"
+                                    android:tint="@color/black"/>
+
+
+                                <RelativeLayout
+                                    android:backgroundTint="@color/colorPrimaryDark"
+                                    android:layout_width="30dp"
+                                    android:background="@drawable/circle_background"
+                                    android:layout_height="30dp">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:tint="@color/white"
+                                        android:layout_height="15dp"
+                                        android:src="@drawable/ic_plus"
+                                        android:layout_centerInParent="true"/>
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:text="All"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="16dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <View
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:layout_width="60dp"
+                                    android:layout_height="1dp"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="50dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Favourite"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                      <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/frame"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:civ_border_width="1dp"
+                                        app:civ_border_color="@color/colorPrimary"
+                                        android:src="@drawable/user_1"/>
+
+
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_toRightOf="@+id/frame"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cristina"
+                                        android:textSize="17dp"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Flat No: 237"
+                                        android:textSize="17dp"/>
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="50dp">
+
+
+                                    <ImageView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_call_7"/>
+
+
+                                    <ImageView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_videocam"/>
+
+
+
+                                </LinearLayout>
+
+
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="25dp"
+                                android:layout_width="match_parent"
+                                android:background="@color/grey"
+                                android:layout_height="1dp">
+
+
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/frame1"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:civ_border_width="1dp"
+                                        app:civ_border_color="@color/colorPrimary"
+                                        android:src="@drawable/user_2"/>
+
+
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_toRightOf="@+id/frame1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mr. Sharma"
+                                        android:textSize="17dp"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Flat No: 402"
+                                        android:textSize="17dp"/>
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="50dp">
+
+
+                                    <ImageView
+                                        android:id="@+id/ivVoicecall"
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_call_7"/>
+
+
+                                    <ImageView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_videocam"/>
+
+
+
+                                </LinearLayout>
+
+
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_marginRight="25dp"
+                                android:layout_width="match_parent"
+                                android:background="@color/grey"
+                                android:layout_height="1dp">
+
+
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/frame2"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:civ_border_width="1dp"
+                                        app:civ_border_color="@color/colorPrimary"
+                                        android:src="@drawable/user_3"/>
+
+
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_toRightOf="@+id/frame2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Fransico"
+                                        android:textSize="17dp"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Flat No: 781"
+                                        android:textSize="17dp"/>
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="50dp">
+
+
+                                    <ImageView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_call_7"/>
+
+
+                                    <ImageView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_videocam"/>
+
+
+
+                                </LinearLayout>
+
+
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_marginRight="25dp"
+                                android:layout_width="match_parent"
+                                android:background="@color/grey"
+                                android:layout_height="1dp">
+
+
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/frame3"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:civ_border_width="1dp"
+                                        app:civ_border_color="@color/colorPrimary"
+                                        android:src="@drawable/user_4"/>
+
+
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_toRightOf="@+id/frame3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Yana"
+                                        android:textSize="17dp"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Flat No: 104"
+                                        android:textSize="17dp"/>
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="50dp">
+
+
+                                    <ImageView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_call_7"/>
+
+
+                                    <ImageView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_videocam"/>
+
+
+
+                                </LinearLayout>
+
+
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_marginRight="25dp"
+                                android:layout_width="match_parent"
+                                android:background="@color/grey"
+                                android:layout_height="1dp">
+
+
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <FrameLayout
+                                    android:layout_centerVertical="true"
+                                    android:id="@+id/frame4"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="80dp"
+                                        android:layout_height="80dp"
+                                        app:civ_border_width="1dp"
+                                        app:civ_border_color="@color/colorPrimary"
+                                        android:src="@drawable/user_5"/>
+
+
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_toRightOf="@+id/frame4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_centerVertical="true">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jane"
+                                        android:textSize="17dp"/>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Flat No: 309"
+                                        android:textSize="17dp"/>
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="50dp">
+
+
+                                    <ImageView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_call_7"/>
+
+
+                                    <ImageView
+                                        android:layout_marginRight="20dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:src="@drawable/ic_outline_videocam"/>
+
+
+
+                                </LinearLayout>
+
+
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_marginRight="25dp"
+                                android:layout_width="match_parent"
+                                android:background="@color/grey"
+                                android:layout_height="1dp">
+
+
+                            </View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="80dp"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+            <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="My Home"
+                                    android:textSize="16dp"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginRight="30dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_alignParentRight="true">
+
+                                <ImageView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_search"
+                                    android:tint="@color/black"/>
+
+
+                                <RelativeLayout
+                                    android:backgroundTint="@color/colorPrimaryDark"
+                                    android:layout_width="30dp"
+                                    android:background="@drawable/circle_background"
+                                    android:layout_height="30dp">
+
+                                    <ImageView
+                                        android:layout_width="15dp"
+                                        android:tint="@color/white"
+                                        android:layout_height="15dp"
+                                        android:src="@drawable/ic_plus"
+                                        android:layout_centerInParent="true"/>
+
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginLeft="10dp"
+                                    android:text="All"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="16dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <View
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/colorPrimaryDark"
+                                    android:layout_width="60dp"
+                                    android:layout_height="1dp"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="50dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Favourite"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                   <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <FrameLayout
+                                android:layout_centerVertical="true"
+                                android:id="@+id/living_room"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    app:civ_border_width="1dp"
+                                    app:civ_border_color="@color/colorPrimary"
+                                    android:src="@drawable/living_room"/>
+
+
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/living_room"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Living Room"
+                                    android:textSize="17dp"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="In House"
+                                    android:textSize="17dp"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:layout_marginRight="50dp">
+
+
+                                <ImageView
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_outline_call_7"/>
+
+
+                                <ImageView
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_outline_videocam"/>
+
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_width="match_parent"
+                            android:background="@color/grey"
+                            android:layout_height="1dp">
+
+
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <FrameLayout
+                                android:layout_centerVertical="true"
+                                android:id="@+id/kitchen"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    app:civ_border_width="1dp"
+                                    app:civ_border_color="@color/colorPrimary"
+                                    android:src="@drawable/kitchen"/>
+
+
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/kitchen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="House"
+                                    android:textSize="17dp"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="In House"
+                                    android:textSize="17dp"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:layout_marginRight="50dp">
+
+
+                                <ImageView
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_outline_call_7"/>
+
+
+                                <ImageView
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_outline_videocam"/>
+
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_marginRight="25dp"
+                            android:layout_width="match_parent"
+                            android:background="@color/grey"
+                            android:layout_height="1dp">
+
+
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <FrameLayout
+                                android:layout_centerVertical="true"
+                                android:id="@+id/bedroom"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    app:civ_border_width="1dp"
+                                    app:civ_border_color="@color/colorPrimary"
+                                    android:src="@drawable/bedroom"/>
+
+
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/bedroom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bedroom"
+                                    android:textSize="17dp"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="In House"
+                                    android:textSize="17dp"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:layout_marginRight="50dp">
+
+
+                                <ImageView
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_outline_call_7"/>
+
+
+                                <ImageView
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_outline_videocam"/>
+
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_marginRight="25dp"
+                            android:layout_width="match_parent"
+                            android:background="@color/grey"
+                            android:layout_height="1dp">
+
+
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <FrameLayout
+                                android:layout_centerVertical="true"
+                                android:id="@+id/kidsroom"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    app:civ_border_width="1dp"
+                                    app:civ_border_color="@color/colorPrimary"
+                                    android:src="@drawable/kidsroom"/>
+
+
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/kidsroom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerVertical="true">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kids Room"
+                                    android:textSize="17dp"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="In House"
+                                    android:textSize="17dp"/>
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:layout_marginRight="50dp">
+
+
+                                <ImageView
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_outline_call_7"/>
+
+
+                                <ImageView
+                                    android:layout_marginRight="20dp"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/ic_outline_videocam"/>
+
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                    </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
+</layout>

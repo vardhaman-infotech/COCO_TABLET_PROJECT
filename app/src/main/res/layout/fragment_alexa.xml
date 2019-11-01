@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AlexaFragment">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alexa, what's the weather\nlike today.?"/>
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_alignParentBottom="true"
+                android:textSize="30dp"
+                android:textColor="@color/grey_cool"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It's a pleasant 32"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tv"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="right|top"
+                android:layout_marginBottom="10dp"
+                android:textSize="30dp"
+                android:textColor="@color/grey_cool"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 C"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/roulette"
+        android:id="@+id/image_roulette"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"/>
+
+
+
+
+
+</RelativeLayout>
+</layout>
